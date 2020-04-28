@@ -5,5 +5,9 @@
             "WIDTH": 0,
             "HEIGHT": 0
         }
+    },
+    "ELECTRON_SETTINGS": {
+        "NODE_INTEGRATION": false,
+        "INDEX_HTML_FILE": "index.html"
     }
 }
