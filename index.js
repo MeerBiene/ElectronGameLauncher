@@ -1,17 +1,19 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
+const launcherConfig = require("./launcher.json");
+const path = require("path");
 
 function createWindow () {
-  // Cree la fenetre du navigateur.
+  // Create main window
   let win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: launcherConfig.WINDOW_SETTING.WINDOW_SIZE.WIDTH,
+    height: launcherConfig.WINDOW_SETTING.WINDOW_SIZE.HEIGHT,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: launcherConfig.ELECTRON_SETTINGS.NODE_INTEGRATION
     }
-  })
+  });
 
-  // and load the index.html of the app.
-  win.loadFile('index.html')
+  // Load the .html index file of the app.
+  win.loadFile(path.resolve(__dirname, "public", launcherConfig.ELECTRON_SETTINGS.INDEX_HTML_FILE));
 }
 
-app.whenReady().then(createWindow)
+app.whenReady().then(createWindow);
