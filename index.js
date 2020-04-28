@@ -18,7 +18,7 @@ function createWindow () {
   });
 
   // Build menu
-  (function (){
+  (function buildMenu(){
     let menuTemplate = [];
 
     if (launcherConfig.MENU_SETTINGS.ITEM_QUIT || launcherConfig.MENU_SETTINGS.ITEM_ABOUT){
@@ -72,20 +72,21 @@ function createWindow () {
     win.setMenu(menu);
   })();
 
-
-  app.on('window-all-closed', () => {
-    // Quit on darwin when all the window closed
-    if (process.platform !== 'darwin') {
-      app.quit()
-    }
-  })
-
-  app.on('activate', () => {
-    // Create new window when no one is display
-    if (win === null) {
-      createWindow()
-    }
-  })
+  (function handleEvent(){
+    app.on('window-all-closed', () => {
+      // Quit on darwin when all the window closed
+      if (process.platform !== 'darwin') {
+        app.quit()
+      }
+    })
+  
+    app.on('activate', () => {
+      // Create new window when no one is display
+      if (win === null) {
+        createWindow()
+      }
+    })
+  })()
 
   // Load the .html index file of the app.
   win.loadFile(path.resolve(__dirname, "public", launcherConfig.ELECTRON_SETTINGS.INDEX_HTML_FILE));
