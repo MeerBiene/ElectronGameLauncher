@@ -1,2 +1,2 @@
 # ElectronGameLauncher
-Launch simple game in htmh/canvas in electron
+Launch simple game in html/canvas in electron
