@@ -14,7 +14,7 @@
         "ITEM_QUIT": false,
         "ITEM_ABOUT": false,
         "ITEMS_CLIPBOARD": false,
-        "ITEM_DEVTOOL": false
+        "ITEMS_DEVTOOL": false
     },
     "ELECTRON_SETTINGS": {
         "NODE_INTEGRATION": false,

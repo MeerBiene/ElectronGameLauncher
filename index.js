@@ -52,13 +52,13 @@ function createWindow () {
       menuTemplate.push(editItemTemplate);
     }
 
-    if (launcherConfig.MENU_SETTINGS.ITEM_DEVTOOL){
+    if (launcherConfig.MENU_SETTINGS.ITEMS_DEVTOOL){
       let devtoolItemTemplate = {
         label: "Devtool",
         submenu: []
       };
 
-      if (launcherConfig.MENU_SETTINGS.ITEM_DEVTOOL){
+      if (launcherConfig.MENU_SETTINGS.ITEMS_DEVTOOL){
         devtoolItemTemplate.submenu.push({ label: "Reload", role: "reload" });
         devtoolItemTemplate.submenu.push({ label: "Devtool", role: "toggledevtools" });
       }
