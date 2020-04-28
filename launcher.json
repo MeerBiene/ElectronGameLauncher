@@ -1,9 +1,9 @@
 {
     "WINDOW_SETTING": {
         "WINDOW_NAME": "",
-        "RESIZABLE": true,
+        "RESIZABLE": false,
         "FULLSCREEN": false,
-        "FRAME": true,
+        "FRAMELESS": false,
         "WINDOW_ICON": false,
         "WINDOW_SIZE": {
             "WIDTH": 0,
