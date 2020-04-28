@@ -1,6 +1,10 @@
 {
     "WINDOW_SETTING": {
         "WINDOW_NAME": "",
+        "RESIZABLE": true,
+        "FULLSCREEN": false,
+        "FRAME": true,
+        "WINDOW_ICON": false,
         "WINDOW_SIZE": {
             "WIDTH": 0,
             "HEIGHT": 0
