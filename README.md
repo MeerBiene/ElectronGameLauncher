@@ -4,6 +4,7 @@ Launch simple game in html/canvas in electron
 Overview
 ========
 You can use this project as template, put your files in the **public/** directory, and change settings in **launcher.json**
+For exemple you have the [ElectronSnok](https://github.com/Adi-df/ElectronSnok) repo who is an adaptation of [Snok](https://github.com/Adi-df/Snok).
 Use ```npm run start``` to start the app.
 And use ```npm run build``` to build the app.
 
