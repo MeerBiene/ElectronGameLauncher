@@ -1,0 +1,31 @@
+{
+  "name": "electrongamelauncher",
+  "version": "1.0.0",
+  "description": "Launch simple game in html canvas in electron",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^8.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adi-df/ElectronGameLauncher.git"
+  },
+  "keywords": [
+    "game",
+    "launcher",
+    "game-launcher",
+    "canvas",
+    "electron-app",
+    "canvas-game"
+  ],
+  "author": "Adidf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adi-df/ElectronGameLauncher/issues"
+  },
+  "homepage": "https://github.com/Adi-df/ElectronGameLauncher#readme"
+}
