@@ -2,7 +2,10 @@ const { app, BrowserWindow, Menu } = require('electron');
 const launcherConfig = require("./launcher.json");
 const path = require("path");
 
+app.allowRendererProcessReuse = false
+
 function createWindow () {
+  
   // Create main window
   let win = new BrowserWindow({
     title: launcherConfig.WINDOW_SETTING.WINDOW_NAME,

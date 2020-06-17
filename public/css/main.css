@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: antiquewhite;
+    margin: 4px;
+    padding: 4px;
+}
+
+button {
+    outline: thick;
+    margin: 4px;
+    padding: 4px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    background-color: blueviolet;
+    
+}
+
+button:hover {
+    margin: 4px;
+    padding: 4px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+}

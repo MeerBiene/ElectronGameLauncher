@@ -1,23 +1,23 @@
 {
     "WINDOW_SETTING": {
-        "WINDOW_NAME": "",
-        "RESIZABLE": false,
+        "WINDOW_NAME": "Staxx game Launcher",
+        "RESIZABLE": true,
         "FULLSCREEN": false,
         "FRAMELESS": false,
         "WINDOW_ICON": false,
         "WINDOW_SIZE": {
-            "WIDTH": 0,
-            "HEIGHT": 0
+            "WIDTH": 640,
+            "HEIGHT": 480
         }
     },
     "MENU_SETTINGS": {
-        "ITEM_QUIT": false,
-        "ITEM_ABOUT": false,
-        "ITEMS_CLIPBOARD": false,
-        "ITEMS_DEVTOOL": false
+        "ITEM_QUIT": true,
+        "ITEM_ABOUT": true,
+        "ITEMS_CLIPBOARD": true,
+        "ITEMS_DEVTOOL": true
     },
     "ELECTRON_SETTINGS": {
-        "NODE_INTEGRATION": false,
+        "NODE_INTEGRATION": true,
         "INDEX_HTML_FILE": "index.html"
     }
 }
