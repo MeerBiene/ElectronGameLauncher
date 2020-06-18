@@ -10,19 +10,19 @@ h1 {
 }
 
 button {
-    outline: thick;
     margin: 4px;
     padding: 4px;
     position: relative;
     justify-content: center;
     text-align: center;
     background-color: blueviolet;
-    
+    border-radius: 6px;   
 }
 
 button:hover {
     margin: 4px;
     padding: 4px;
+    border-radius: 6px;
     position: relative;
     justify-content: center;
     text-align: center;

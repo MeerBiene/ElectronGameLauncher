@@ -4,6 +4,7 @@ const path = require("path");
 
 app.allowRendererProcessReuse = false
 
+console.log(process.platform)
 function createWindow () {
   
   // Create main window
@@ -20,6 +21,7 @@ function createWindow () {
     }
   });
 
+  
   // Build menu
   (function buildMenu(){
     let menuTemplate = [];
