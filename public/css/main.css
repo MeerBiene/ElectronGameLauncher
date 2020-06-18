@@ -16,7 +16,7 @@ button {
     justify-content: center;
     text-align: center;
     background-color: blueviolet;
-    border-radius: 6px;   
+    border-radius: 0px;   
 }
 
 button:hover {

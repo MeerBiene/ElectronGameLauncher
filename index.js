@@ -1,11 +1,21 @@
 const { app, BrowserWindow, Menu } = require('electron');
 const launcherConfig = require("./launcher.json");
 const path = require("path");
+const { stderr } = require('process');
 
 app.allowRendererProcessReuse = false
 
 console.log(process.platform)
+
+const { exec } = require('child_process');
+ 
+
 function createWindow () {
+
+ 
+  exec("java -jar Staxx.jar", (err, out, stderr) => {
+    console.log(`Error: ${err}`, `Stdout: ${out}`, `Stderror: ${stderr}`);
+  })
   
   // Create main window
   let win = new BrowserWindow({
